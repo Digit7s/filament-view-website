@@ -1,0 +1,68 @@
+{
+    "name": "digit7s/filament-view-website",
+    "type": "library",
+    "description": "A lightweight Filament 5 panel plugin that adds a configurable Visit Website action to the panel topbar.",
+    "keywords": [
+        "digit7s",
+        "laravel",
+        "filamentphp",
+        "filament",
+        "filament-plugin",
+        "view-website"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Myo Min Oo",
+            "email": "myomin.oo@digit7s.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^5.0",
+        "spatie/laravel-package-tools": "^1.15"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.7|^4.0",
+        "pestphp/pest-plugin-arch": "^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0",
+        "pestphp/pest-plugin-livewire": "^3.0|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Digit7s\\FilamentViewWebsite\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Digit7s\\FilamentViewWebsite\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "analyse": "phpstan analyse --debug --no-progress",
+        "lint": "pint",
+        "test": "pest",
+        "test:lint": "pint --test"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Digit7s\\FilamentViewWebsite\\ViewWebsiteServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
