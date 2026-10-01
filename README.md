@@ -6,6 +6,14 @@ It provides a quick link from a Filament admin panel to the public website using
 
 Source repository: [Digit7s/filament-view-website](https://github.com/Digit7s/filament-view-website)
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/digit7s/filament-view-website.svg?style=flat-square)](https://packagist.org/packages/digit7s/filament-view-website)
+[![Total Downloads](https://img.shields.io/packagist/dt/digit7s/filament-view-website.svg?style=flat-square)](https://packagist.org/packages/digit7s/filament-view-website)
+[![License](https://img.shields.io/github/license/Digit7s/filament-view-website.svg?style=flat-square)](https://github.com/Digit7s/filament-view-website/blob/main/LICENSE.md)
+
+## Screenshot
+
+![Filament View Website in dark mode](art/filament-view-website-dark.png)
+
 ## Features
 
 - Native Filament topbar integration
@@ -165,6 +173,14 @@ ViewWebsitePlugin::make()
 If the resolved URL is blank, the action is not rendered.
 
 The plugin uses native Filament components, so it follows the panel's styling and dark mode. No custom CSS or JavaScript is required.
+
+## Screenshots
+
+The same integration is also available in light mode and on narrow screens:
+
+![Filament View Website in light mode](art/filament-view-website-light.png)
+
+![Filament View Website on a mobile viewport](art/filament-view-website-mobile.png)
 
 ## Testing
 
