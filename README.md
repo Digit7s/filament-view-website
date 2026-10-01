@@ -194,32 +194,6 @@ composer analyse
 composer validate --no-check-publish
 ```
 
-## Testing a Local Checkout
-
-This section is only for contributors modifying the package locally and testing the checkout inside another Laravel application. It is not required for normal package installation.
-
-Add a path repository to the consuming application's `composer.json`:
-
-```json
-{
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../filament-view-website",
-            "options": {
-                "symlink": true
-            }
-        }
-    ]
-}
-```
-
-Then install the local development package:
-
-```bash
-composer require digit7s/filament-view-website:@dev
-```
-
 ## Security
 
 Please do not report security vulnerabilities through public GitHub issues. See [SECURITY.md](SECURITY.md) for reporting instructions.
